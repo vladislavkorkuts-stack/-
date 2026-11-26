@@ -1,0 +1,17 @@
+{
+  "name": "informatics-school-67",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 3000 --bind 0.0.0.0",
+    "build": "python3 scripts/build.py",
+    "test": "python3 -m unittest discover -s tests",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@sparticuz/chromium": "158.0.0",
+    "axe-core": "4.14.1",
+    "prettier": "3.10.1"
+  }
+}

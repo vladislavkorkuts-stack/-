@@ -1,1 +1,6 @@
 *.avi
+.venv/
+node_modules/
+__pycache__/
+.playwright-cli/
+test-results/
