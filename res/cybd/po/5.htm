@@ -1,0 +1,279 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Задания 1 курс</title>
+<link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+<style>
+/* описание таблицы  */
+         body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 4pt 0pt 0pt 20pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+        
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .zagol{
+            color: blue;
+        }
+
+
+
+</style>
+</head>
+
+
+<body>
+<!-- Стандартная шапка страницы -->
+<div class='Shapka'>
+   <p class='Zag'>Задания для 1 курс</p>
+
+</div>
+
+<table align="center"><tr><td>
+<h1>Практическая работа "Создание запросов и отчетов"</h1>
+<ul>
+
+<li>Откройте <a href='Lb07/Res' target="_blank"><span class='Term'>эту папку</span></a> и скопируйте базу данных <span class='Term'>DB_7.txt</span></a>.
+Сохраните базу с именем <span class='Term'>11Ф_NN_DB_7.accdb</span>. Это вариант базы "Мосты".
+</li><br>
+
+
+<li>Изучите структуру и содержимое таблиц. 
+</li><br>
+
+<li>Сформируйте ленточную форму для таблицы Мосты.</li><br>
+<img src='Lb07/p_1.jpg'>
+<li>Сформируйте следующие запросы:</li><br>
+<ol>
+<li>	Мосты, построенные после 1964 года.</li>
+<li>	Местонахождение мостов, построенных в 1964 году.</li>
+<li>	Мосты с длиной пролета более 600 метров.</li>
+<li>	Все сведения о мостах арочного типа.</li>
+<li>	Мосты определённого года постройки (запрос, который вначале запрашивает интересующий год, а затем выводит сведения о мостах, построенных в этот год).</li>
+<li>	Мосты определённой страны (запрос, который вначале запрашивает интересующую страну, а затем выводит сведения о мостах, построенных в этой стране).</li>
+</ol>
+<br>
+<li>Сформируйте отчеты по каждому запросу.</li><br>
+<li>*Добавьте в таблицу поле, в котором возможно размещение фотографии моста.</li><br>
+<!--
+<li>*Добавьте в таблицу поле (или новую раблицу со связью), в котором есть ссылка на страницу с пояснением, что означает данный тип моста. Для этого из общей веб-страницы 
+<a href='Lb07/Классификация мостов.htm' target="_blank">Классификация мостов</a> создайте отдельные файлы для каждого типа моста (Недостающие типы допишите сами). </li><br>
+-->
+<li>*Добавьте в таблицу несколько фотографий.</li><br>
+<li>Сформируйте форму для таблицы "Мосты", в которой отображаюся сведения об одном мосте и его фотография. Поработайте над дизайном этой формы. (<a href='Lb07/p_3.jpg' target="_blank">Пример</a> для тех, кто не придумал свой дизайн).</li><br>
+<li>Создайте отчет "Сведения о мостах с длиной пролета более 600 метров", в котором также выводятся  фотографии мостов. (
+ <a href='Lb07/p_2.jpg' target="_blank">Пример</a> для тех, кто не придумал свой дизайн).</li><br>
+</ul>
+<P>&nbsp;</P>
+</td></tr></table>
+
+<table align="center"><tr><td>
+<P>&nbsp;</P><P>
+<a href='Lb07/img/' target='blank'> Картинки для занятий</a>.
+<P>&nbsp;</P><P>
+<a href='https://www.youtube.com/watch?v=jiL1Hsf0ops' target='blank'> Подробная справка по использованию изображений в базе данных</a>. 
+
+</P><P>&nbsp;</P>
+<P>&nbsp;</P>
+</td></tr>
+<table align="center"><tr><td>
+<h1>Совместное применение офисных приложений </h1>
+
+<h2>Задание</h2>
+<p>Откройте <a href='Lb08/1' target="_blank"><span class='Term'>эту папку</span></a> и скопируйте базу данных <span class='Term'>DB_8.txt</span>.
+Сохраните базу с именем <span class='Term'>11Ф_NN_DB_8.accdb</span>. Это вариант базы "Экзамены".<br>Используйте данные этой базы для выполнения задания: 
+</p>
+<ol>
+<li>Постройте с помощью MS Excel гистограммы, отображающие результаты экзаменов в каждом классе из исходной базы. Для этого можно:</li>
+	<ul>
+		<li>создать нужный запрос (запрос с параметром - названием класса; вычисляемое поле - ученик (<a href='Lb08/1.avi' >см. справку</a>));</li>
+		<li>из него сделать отчет (с группировкой по предметам);</li>
+		<li>экспортировать отчет в MS Excel.</li>
+	</ul>
+
+<li>Составьте текстовый документ с отчетом о проделанной работе, в котором будут находиться построенные  гистограммы.
+<br> (Результат может быть  <a href='Lb08/in.htm' target=blank>таким</a>)
+</li>
+
+<li>Текстовый документ сохраните в папку <span class='Term'>На проверку/СУБД</span> с именем <span class='Term'>11Ф_NN_P1.docx</span></P>
+</li>
+
+</ol>
+<P>&nbsp;</P>
+
+
+
+
+</table>
+
+<?php include "../Bloc_res/podval.php"; ?>
+

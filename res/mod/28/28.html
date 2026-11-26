@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Задания 1 курс</title>
+    <link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+    <style>
+         /* описание таблицы  */
+         body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 4pt 0pt 0pt 20pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+        
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .zagol{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Стандартная шапка страницы -->
+    <div class='Shapka'>
+        <p class='Zag'>Задания для 1 курса. Практическое занятие №28</p>
+
+    </div>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1>Системный подход. Моделирование систем. Моделирование в физике, биологии, экономике, математике</h1>
+
+                <ul>
+                   <li><b>Ознакомтесь с видео роликом:</b><br>
+                    <video controls="controls" width="50%" height="50%">
+                    <source src="vid.mp4" type='video/mp4; avc1.42E01E, mp4a.40.2"'>
+                    Тег video не поддерживается вашим браузером. 
+                    </video><br>
+                   </li>
+                   &nbsp;<br>
+                   <li><span class="Term">Выполните задания:</span><br>
+                   <b>Задание 1</b>. Составить программу нахождения числа Пи. Запишите результаты экспериментов, начиная с N=100; 1 000; 10 000; 100 000; 1 000 000 в таблицу.<br>
+                    <img src="res/1.png" alt=""><br>
+                    <b>Задание 2</b>. Составить программу моделирования случайных чисел, отвечающих распределению Пуассона с параметром <b>λ=2</b>.<br>
+                    <img src="res/Screenshot_1.png" alt="" width="25%"><br>
+                    <b>Задание 3</b>. Средствами электронных таблиц решить задачу. Происходит дуэль между участниками A и B. Участник A стреляет первым с вероятностью <b>pa=0,9</b>.<br>
+                    При стрельбе участник A попадает в B с вероятностью pa=0,5, а участник B в A с вероятностью pb=0,8. Участники делают не более одного выстрела. Оценить вероятность победы участника A, B и вероятность ничьей.<br>
+                    Решение. Выполняем аналитический расчет требуемых вероятностей.<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;P(A)=ppA+(1-p)(1-pB)pA=0,46;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;P(B)=p(1-pA)pB+(1-p)pB=0,44;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;P(H)=(1-pA)(1-pB)=0,1;<br>
+                    &nbsp;<br>
+                    Значения вероятностей pa, pb, pH выставляем в ячейки A2, A4, A6.<br>
+                    Последовательность 20 случайных чисел реализуем в столбцах B, D, F с помощью функции <big>СЛЧИС()</big>.<br>
+                    В ячейке <b>С2</b> реализуем «Кто стреляет первым» с помощью функции <big>=ЕСЛИ(B2>=$A$2;"A";"B")</big><br>
+                    В ячейке <b>E2</b> «Результат A» с помощью функции <big>=ЕСЛИ(D2>=$A$4;"Попал";"Промах")</big><br>
+                    В ячейке <b>G2</b> «Результат B» с помощью функции <big>=ЕСЛИ(И(E2="Попал");"---";ЕСЛИ(И(F2>=$A$6;E2="Промах");"Попал";"Промах"))</big><br>
+                    В ячейке <b>H2</b> «Кто победил» с помощью функции <big>=ЕСЛИ(И(C2="A";E2="Попал");"A";ЕСЛИ(И(C2="B";E2="Попал");<br>
+                        "B";ЕСЛИ(И(E2="Промах";G2="Промах");"Ничья";ЕСЛИ(И(G2="Попал");"B")))</big><br>
+                    <img src="res/2.png" alt=""><br>
+                    В результате 20 испытаний высчитываем в ячейке <b>H22</b> сколько раз выиграл A с помощью функции <big>=СЧЁТЕСЛИ(H2:H21;"A")</big>;<br>
+                     в ячейке <b>H23</b> с помощью функции <big>=СЧЁТЕСЛИ(H2:H22;"B")</big>;<br>
+                     в ячейке <b>H24</b> с помощью функции <big>=СЧЁТЕСЛИ(H2:H23;"Ничья")</big>.<br>
+                </li><br>
+                &nbsp;<br>
+                <b>Ответьте на контрольные вопросы</b>:<br>
+                <img src="res/kr.png" alt="">
+                </ul>
+                <p>&nbsp;</p>
+
+            </td>
+        </tr>
+    </table>

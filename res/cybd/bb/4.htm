@@ -1,0 +1,343 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="ru">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Задания 1 курс</title>
+<link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+<style>
+/* описание таблицы  */
+         body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 4pt 0pt 0pt 20pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+        
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .zagol{
+            color: blue;
+        }
+
+
+</style>
+</head>
+
+
+<body>
+<!-- Стандартная шапка страницы -->
+<div class='Shapka'>
+   <p class='Zag'>Задания для 1 курса</p>
+
+</div>
+
+<table align="center"><tr><td>
+<h1>Запросы и отчеты</h1>
+<h2>Практическая работа "Поиск данных с помощью запросов"</h2>
+<ul>
+<li>
+В разделе <span class='Term'>На проверку/СУБД</span> откройте
+<!--
+базу <span class='Term'>11Ф_NN_DB_3.mdb</span>  (
+-->
+<a href='Lb05/1' target="_blank"><span class='Term'>эту папку</span></a> и скопируйте базу данных <span class='Term'>DB_5.txt</span> в папку <span class='Term'>C:\Temp</span>.
+ Переименуйте файл в <span class='Term'>11Ф_NN_DB_5.accdb</span>. Работу выполняйте в этом файле. 
+</li>
+
+<li>Создайте запрос "Список учеников" содержащий фамилии, имена и отчества всех учеников в алфавитном порядке.
+	<br><img src="Lb05/1.gif" width="250px">
+</li>
+
+<li>Создайте запрос "Список предметов" содержащий названия предметов и фамилии учителей
+	<br><img src="Lb05/2.gif" width="250px">
+</li>
+
+<li>Создайте запрос "Отличники" содержащий названия предметов, фамилии учеников и отметки для получивших 9 или 10 баллов.
+	<br><img src="Lb05/3.gif" width="250px">
+</li>
+
+<li>Создайте запрос "Сведения об экзаменах" содержащий списки учеников с указанием предметов, по которым они сдавали экзамены.
+	<!--<br><img src="Lb05/3.gif" width="250px">
+	-->
+</li>
+
+<li>Создайте с помощью мастера запросов <b>перекрёстный запрос</b> "Результаты экзаменов" содержащий названия предметов, фамилии имена учеников, класс и полученные отметки.
+	<br><img src="Lb05/5_b.jpg" height="150px">
+</li>
+<li>Создайте отчет "Результаты экзаменов" содержащий названия предметов, фамилии имена и отчества учеников, класс и полученные отметки.
+	<br><img src="Lb05/4.gif" width="300px">
+</li>
+
+
+
+<li>
+Не забудьте скопировать базу к себе в папку <span class='Term'>Z:\На проверку\СУБД</span>.
+</li>
+<P>&nbsp;</P>
+</td></tr></table>
+
+
+<table align="center"><tr><td>
+
+<a href="https://www.youtube.com/watch?v=ihHhkajTEBk&list=PLLKRrygaZSBqST7U4byRHu6DkcHGLQr4f" target='blank'>Справка</a>
+<P>&nbsp;</P>
+</td></tr></table>
+
+<table align="center"><tr><td>
+<P>Справились? Отлично! Тогда продолжайте заниматься самообразованием <a href='Lb05_C.php' ><span class='Term'>
+далее</span></a>.
+
+<ol>
+
+<li>Откройте <a href='Lb06/1' target="_blank"><span class='Term'>эту папку</span></a> и скопируйте базу данных <span class='Term'>DB_6.txt</span>
+Сохраните базу с именем <span class='Term'>11Ф_NN_DB_6.accdb</span>. Это вариант базы "Экзамены".<br>Обратите внимание на расширение имени - accdb !
+<br></li>
+
+
+<li>Изучите структуру таблиц 
+</li><br>
+
+<li>Создайте запрос "Результаты экзаменов", содержащий результаты всех экзаменов всех учеников по всем классам. Укажите, по каким предметам сдавались экзамены. 
+</li><br>
+<ul>
+<li>Создайте отчет "Результаты экзаменов", сгруппированный по классам. 
+</li>
+<li>Создайте отчет "Результаты экзаменов по предметам", сгруппированный по предметам. 
+</li><br></ul><br>
+
+<li>Создайте запрос "Экзамены, сданные  7 июня", содержащий результаты всех экзаменов, сданных 7 июня. Результаты должны содержать класс, фамилию, имя ученика, предмет, по которому сдавался экзамен и результат этого экзамена.
+</li><br>
+
+<ul>
+<li>Создайте отчет "Экзамены, сданные  7 июня", сгруппированный по предметам.
+</li><br></ul><br>
+
+
+<li>Создайте запрос "Экзамены, сданные  учениками 11 А класса". Запрос должен содержать фамилию, имя ученика, предмет и оценку за экзамен по этому предмету. 
+</li><br>
+
+<ul>
+<li>Создайте отчет "Экзамены, сданные  учениками 11 А класса", сгруппированный по ученикам. 
+</li>
+<li>Создайте отчет "Экзамены, сданные  учениками 11 А класса по предметам", сгруппированный по предметам. 
+</li><br></ul><br>
+
+
+<li>Создайте запрос с параметром  "Экзамены в указанный день", содержащий результаты всех экзаменов, сданных во вводимый день указанным классом. Результаты должны содержать фамилию, имя, предмет, по которому сдавался экзамен. В шапке отчета указывается дата и класс.
+</li><br>
+<ul>
+<li>Создайте отчет с параметром  "Экзамены в указанный день", сгруппированный по ученикам.
+</li>
+<li>Создайте отчет с параметром  "Экзамены в указанный день по предметам", сгруппированный по предметам.
+</li><br>
+</li><br></ul><br>
+
+
+
+<li>Создайте запрос "Списки учеников" , отчёт по которому выглядит следующим образом:
+<br><img src="Lb06/1.jpg" width="250px">
+<br>(Отчёт в подтверждение выполнения задания желателен.)
+
+</li><br>
+
+
+
+
+
+<li>Создайте запрос "Сведения об экзаменах" содержащий списки учеников с указанием предметов, по которым они сдавали экзамены.
+</li><br>
+
+
+
+<ul><li>Создайте отчет с  "Сведения об экзаменах", сгруппированный по ученикам.
+
+</li>
+<li>Создайте отчет с  "Сведения об экзаменах", сгруппированный по предметам.
+</li>
+<li>Создайте отчет с  "Сведения об экзаменах", сгруппированный по классам и по предметам.
+</li><br>
+</ul>
+</ol>
+<P>&nbsp;</P>
+</td></tr></table>
+
+
+
+<table align="center"><tr><td>
+<P>&nbsp;</P><P>
+<a href='https://www.youtube.com/watch?v=s60t66RZN9g&list=PLLKRrygaZSBqST7U4byRHu6DkcHGLQr4f&index=3' target='blank'> Подробная справка по созданию отчётов</a>. <br>
+
+<a href='https://www.youtube.com/watch?v=_1QPcgX3bGA&index=4&list=PLLKRrygaZSBqST7U4byRHu6DkcHGLQr4f' target='blank'> Подробная справка по созданию запроса с параметром</a>.
+
+</p>
+<P>&nbsp;</P>
+</td></tr></table>
+
+<?php include "../Bloc_res/podval.php"; ?>
+

@@ -1,0 +1,44 @@
+<?php
+  $Title = "DB_04_A"; 
+  include "../../Bloc_res/shapkaL2.php"; 
+?>
+
+<table align="center"><tr><td>
+
+<h2>Практическая работа "Связывание таблиц базы данных"</h2>
+<h3>Краткая справка по созданию формы с выпадающими списками</h2>
+<ul>
+<li>	Создайте форму <span class='Term'>Экзамены</span>:<br>
+		<img src="3_1.JPG" >
+</li>	
+<br><li>Перейдите в режим <span class='Term'>Макет </span>
+</li>
+<br><li>Выделите поле и вызовите контекстное меню: <br>
+		<img src="3_2.JPG" >
+</li>
+<br><li>Вызовите через контекстное меню <span class='Term'>Cвойства</span> поля и настройте источник данных: <br>
+		<img src="3_6.JPG" ><img src="3_3.JPG" >
+</li>
+<br><li>Затем настройте отображение данных в поле:<br>
+		<img src="3_4.JPG" >
+</li>
+
+<br><li>Аналогично создайте поле со списком для предметов:<br>
+		<img src="3_7.JPG" ><img src="3_8.JPG" >
+</li>
+
+<li>Перейдите в режим <span class='Term'>Форма</span> и внесите данные в базу.
+</li>
+</td>
+</tr>
+</table>
+<P>&nbsp;</P>
+</td></tr></table>
+
+
+
+<?php include "../../Bloc_res/podvalL2.php"; ?>
+
+
+
+

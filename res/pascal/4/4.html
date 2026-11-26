@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru" style="font-size: 16px;">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Практическое занятие №2 — алгоритм и его свойства, среда программирования, структура программы.">
+  <title>Практическое занятие №2 — Pascal</title>
+  <link rel="stylesheet" href="../../../nicepage.css" media="screen">
+  <link rel="stylesheet" href="../../../Pascal.css" media="screen">
+  <meta name="theme-color" content="#1c75bc">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="u-body">
+
+  <!-- ОСНОВНОЙ БЛОК -->
+  <main class="main-wrap task-page">
+
+    <!-- Хлебные крошки -->
+    <nav class="breadcrumbs" aria-label="Навигация">
+      <a href="../../../ИОР-Информатика.html">Главная</a>
+      <span>›</span>
+      <a href="../../../Программисты.html">Программисты</a>
+      <span>›</span>
+      <a href="../../../Pascal.html">Pascal</a>
+      <span>›</span>
+      <span class="current">Занятие №2</span>
+    </nav>
+
+    <!-- Заголовок и мета -->
+    <header class="task-head">
+      <h1 class="task-title">Алгоритм и его свойства. Среда программирования</h1>
+      <div class="task-meta">
+        <span class="meta-item">Раздел 1. Алгоритмы обработки массивов</span>
+        <span class="meta-item">Pascal ABC.NET</span>
+        <span class="meta-item">2 академических часа</span>
+      </div>
+    </header>
+
+    <!-- Содержание -->
+    <aside class="task-toc">
+      <p class="toc-title">Содержание</p>
+      <ol>
+        <li><a href="#goal">Цель работы</a></li>
+        <li><a href="#theory">Краткие теоретические сведения</a></li>
+        <li><a href="#tasks">Задания для выполнения</a></li>
+        <li><a href="#control">Контрольные вопросы</a></li>
+      </ol>
+    </aside>
+
+    <!-- 1. Цель -->
+    <section class="task-section" id="goal">
+      <h2 class="section-h">1. Цель работы</h2>
+      <p>Изучить понятие алгоритма, его свойства и способы записи. Освоить среду программирования Pascal ABC.NET, структуру программы, операции загрузки и сохранения. Научиться работать с символьными и строковыми величинами.</p>
+    </section>
+
+    <!-- 2. Теория -->
+    <section class="task-section" id="theory">
+      <h2 class="section-h">2. Краткие теоретические сведения</h2>
+
+      <h3 class="sub-h">2.1. Алгоритм и его свойства</h3>
+      <p><strong>Алгоритм</strong> — точное и понятное предписание исполнителю выполнить конечную последовательность действий, приводящую к поставленной цели.</p>
+      <ul class="task-list">
+        <li><strong>Дискретность</strong> — процесс разбит на отдельные шаги.</li>
+        <li><strong>Детерминированность</strong> — каждый шаг однозначен.</li>
+        <li><strong>Конечность</strong> — алгоритм завершается за конечное число шагов.</li>
+        <li><strong>Массовость</strong> — применим к целому классу задач.</li>
+        <li><strong>Результативность</strong> — всегда даёт результат.</li>
+      </ul>
+
+      <h3 class="sub-h">2.2. Структура программы на Pascal</h3>
+      <p>Программа состоит из заголовка, раздела описаний и раздела операторов:</p>
+<pre class="code-block"><code>program Hello;
+begin
+  writeln('Привет, мир!');
+end.</code></pre>
+
+      <div class="note">
+        <strong>Обратите внимание:</strong> операторы отделяются точкой с запятой, программа завершается <code>end.</code> с точкой.
+      </div>
+
+      <h3 class="sub-h">2.3. Символьные и строковые величины</h3>
+      <p>Символьный тип <code>char</code> хранит один символ, строковый <code>string</code> — последовательность символов.</p>
+<pre class="code-block"><code>var
+  c: char;
+  s: string;
+begin
+  c := 'A';
+  s := 'Информатика';
+  writeln(c, ' — ', s);
+end.</code></pre>
+    </section>
+
+    <!-- 3. Задания -->
+    <section class="task-section" id="tasks">
+      <h2 class="section-h">3. Задания для выполнения</h2>
+
+      <div class="task-item">
+        <span class="task-num">Задание 1</span>
+        <p>Составьте алгоритм вычисления суммы двух чисел. Запишите его тремя способами: словесным, графическим (блок-схема), на языке Pascal.</p>
+      </div>
+
+      <div class="task-item">
+        <span class="task-num">Задание 2</span>
+        <p>Напишите программу, которая запрашивает имя пользователя и выводит приветствие.</p>
+<pre class="code-block"><code>var name: string;
+begin
+  write('Введите имя: ');
+  readln(name);
+  writeln('Здравствуйте, ', name, '!');
+end.</code></pre>
+      </div>
+
+      <div class="task-item">
+        <span class="task-num">Задание 3</span>
+        <p>Объявите символьную переменную, присвойте ей любую букву и выведите её код (функция <code>Ord</code>) и следующий символ (<code>Succ</code>).</p>
+      </div>
+    </section>
+
+    <!-- 4. Контрольные вопросы -->
+    <section class="task-section" id="control">
+      <h2 class="section-h">4. Контрольные вопросы</h2>
+      <ol class="task-list">
+        <li>Что такое алгоритм? Перечислите его основные свойства.</li>
+        <li>Чем отличается <code>char</code> от <code>string</code>?</li>
+        <li>Какова структура программы на Pascal?</li>
+        <li>Как загрузить и сохранить программу в Pascal ABC.NET?</li>
+      </ol>
+    </section>
+
+    <!-- Возврат -->
+    <div class="task-back">
+      <a href="../../../Pascal.html" class="header-back">← Вернуться к списку занятий</a>
+    </div>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-teacher">Преподаватель: Горчакова О.А.</p>
+      <div class="social-row">
+        <a href="https://t.me/ggaekinf" target="_blank" aria-label="Telegram"><img src="../../../images/telegram2.png" alt="Telegram"></a>
+        <a href="http://ggaek.by/" target="_blank" aria-label="Сайт"><img src="../../../images/web-site.png" alt="Сайт"></a>
+        <a href="https://vk.com/ggaek" target="_blank" aria-label="VK"><img src="../../../images/vk.png" alt="VK"></a>
+        <a href="https://www.youtube.com/channel/UCNA-QnvmnJsInabmmoxA-BQ" target="_blank" aria-label="YouTube"><img src="../../../images/youtube.png" alt="YouTube"></a>
+        <a href="https://www.instagram.com/ggaek_gomel/" target="_blank" aria-label="Instagram"><img src="../../../images/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

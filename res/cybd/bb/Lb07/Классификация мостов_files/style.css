@@ -1,0 +1,212 @@
+@charset "windows-1251";
+body { scrollbar-highlight-color: #01468A;
+scrollbar-face-color: #0170AB;
+scrollbar-shadow-color: 000000;
+scrollbar-3dlight-color: CCCCCC;
+scrollbar-arrow-color: 000000;
+scrollbar-track-color: #01468A;}
+
+body a{ color: #9B5949; text-decoration: none;}
+body a:hover{color: #01468A;}
+
+#top_left{ 
+    background-repeat:no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px; /* Размер шрифта */
+	font-style: italic;
+	text-align:left;	
+   }
+
+#nav ul {font: 11px Verdana;
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	width:220px;
+	text-align:left;}
+
+#nav ul li {position: relative;}
+
+#nav li ul {position: absolute;
+	left: 220px;
+	top: 0;
+	display: none;}
+	
+#nav ul li a {display: block;
+	text-decoration: none;
+	color: #9B5949;
+	background: #E8E8E7;
+	padding-left: 20px;
+	padding-right: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	border-bottom: 0;}
+	
+#nav li:hover ul, #nav li.over #nav ul {display: block;}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #nav ul li { float: left; }
+* html #nav ul li a { height: 1%; }
+/* End */
+#nav a:hover{
+background: #E8E8E7; 
+color: #01468A;
+display: block;}
+
+strong {font: normal 12px Verdana;} 
+.kontent {padding: 5px; padding-top: 0px; font-family:Verdana; font-size: 12px; text-align: justify;}
+.foto {padding: 5px; padding-top: 0px; font-family:Verdana; font-size: 12px; text-align:center;}
+ 
+.topblock {padding-top:20px; padding-bottom:0px; text-align:center; font: 11px Verdana;}
+.rightblock {padding: 2px; background: #E8E8E7; border: 10px solid #DFE2E5;
+	border-radius: 10px 0 0 10px; 
+	-moz-border-radius: 10px 0 0 10px;
+	-khtml-border-radius: 10px 0 0 10px;}
+.leftblock {background: #E8E8E7; border: 10px solid #DFE2E5;
+	border-radius: 0 10px 10px 0; 
+	-moz-border-radius: 0 10px 10px 0;
+	-khtml-border-radius: 0 10px 10px 0;}
+.bottom {font-family:Verdana; font-size: 11px; text-align: center;}
+
+.nachalzagolovock { text-align:left; font-family:Verdana; font-size: 13px; color: #014C88; }
+.glzagolovock {font-family:Verdana; font-size: 13px; color: #014C88; }
+.zagolovock { background: #F1F5F9; font-family:Verdana; font-size: 12px; width: 80%;
+text-align: center; margin:auto; margin-bottom: 10px; margin-top: 10px;}
+
+.title_link { text-align:left; font: normal 12px Verdana; width: 80%;}
+
+a title_link { padding: 1px;
+padding-left: 5px;
+display: block;
+width: 80%;   
+color: #9B5949
+text-decoration: none;
+border-bottom: solid 1px #000000;}
+
+.title_link a:hover{}
+
+IMG.ris { float:left; margin-right: 5px; margin-top: 5px;  border-right-style: double; border-bottom-style: double; border-right-color:#000000; border-bottom-color:#000000; border-top: 0px; border-left: 0px;} 
+IMG.bol_ris { float: left; margin-right: 10px; margin-bottom: 5px; margin-top: 0px;}
+IMG.bol_r_ris { float: right; margin-left: 10px; margin-bottom: 5px; margin-top: 0px;}
+IMG.m_galer { border-right-style: double; border-bottom-style: double; border-right-color:#000000; border-bottom-color:#000000; border-top: 0px; border-left: 0px; margin-left:5px; margin-right:5px; margin-top:5px; margin-bottom:5px;}
+.galer { text-align:center; margin-top:10px; margin-bottom:10px;}
+
+.text {padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom:10px; font-family:Verdana; font-size: 12px; margin-top: 10px; margin-bottom: 10px; text-align:justify;}
+.cop { font-family:Verdana; font-size: 11px; color: #000000; text-align: center;}
+
+#nav_menu { border: 1px solid #000000;
+
+width: 96%;
+background-color: #F1F5F9;
+margin: 2px;
+text-align: left;}
+
+* html #nav_menu { width: 167px;}
+
+#nav_menu a { font: bold 11px Verdana;
+padding: 2px;
+padding-left: 5px;
+display: block;
+width: 100%;   
+color: #9B5949
+text-decoration: none;
+border-bottom: solid 1px #000000; }
+
+#nav_menu a:hover{
+background-color:#01468A; 
+color: #FFFFFF; }
+
+html>body #nav_menu a{ 
+width: auto;}
+
+.nav { text-align: center; font: bold 11px Verdana; color: #01468A; margin-top: 5px; margin-bottom: 5px;  border-left: 4px solid #000000; border-bottom: 1px solid; width: 85%;}
+
+.punkt { font:bolder 11px;}
+
+.page { background-color: #F1F5F9; text-align:center; width:30%; border-bottom:solid 1px #000000; border-left: solid 4px #000000;
+font: 11px Verdana; margin: 10px;}
+
+.novost a { font: 10px Verdana;}
+.novost {padding-left: 2px; padding-right: 2px; padding-top: 5px; padding-bottom:5px; font-family:Verdana; font-size: 10px; margin-top: 5px; margin-bottom: 5px; margin-left: 1px; margin-right: 1px;}
+
+.link { font: 9px Verdana;}
+
+#menu  {font: 11px Verdana; text-align: center;
+  background-image:url('images/bc_bg.png'); 
+  background-repeat:repeat-x;
+  height:30px;
+  line-height:30px;
+  color:#9b9b9b;
+  border-bottom:solid 1px #cacaca;
+  width:100%;
+  overflow:hidden; 
+   margin: 0px;
+  padding:0px;
+   min-width: 900px; /* Минимальная ширина контейнера */
+  }
+  #menu li {list-style-type:none;
+  float:left;
+  padding-left:10px;
+  }
+  #menu a {height:30px;
+  display:block;
+  background-image:url('images/bc_separator.png'); 
+  background-repeat:no-repeat; 
+  background-position:right;
+  padding-right: 15px;
+  text-decoration: none;
+  color:#9B5949;
+  }
+#menu a:hover{color: #01468A;
+  }
+  
+.right_text { text-align:right; font-size:11px; margin-top:10px;}
+
+.new a { font: 11px Verdana;}
+.new { text-align:left; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom:5px; font-family:Verdana; font-size: 11px; margin-top: 5px; margin-bottom: 5px; margin-left: 1px; margin-right: 1px;}
+.dob_text { text-align:center; margin-left: 10px; font-size: 11px;}
+.new_t {margin-left: 10px; font-size: 11px;}
+
+
+.sap_recl a { font: 10px Verdana;}
+.sap_recl { text-align:left; color: #9B5949; padding-right: 5px; padding-top: 5px; padding-bottom:5px; font-family:Verdana; font-size: 10px; margin-top: 5px; margin-bottom: 5px; margin-left: 10px; margin-right: 1px;}
+
+.adlabs {text-align: center; margin-top: 5px; margin-bottom: 5px; font-size: 11px;}
+
+.rss { text-align: center; font-size: 11px; font-weight: bold; margin-top: 5px; margin-bottom: 5px;}
+.rss_ris { text-align: center; margin-bottom: 5px;}
+
+.company_foto {font-size: 11px; width: 450px; margin: 10px;}
+.vakansiya {padding: 5px; text-align: center;}
+
+/*Форма обратной связи*/
+#form {padding-left: 10px;}
+.tcenter { background-image:url(images/tcenter.jpg); background-repeat:repeat-y;}
+.tcenter p {font:bold 11px Verdana,sans-serif; color:#333; margin-left: 30px;}
+.inputtext {width:200px; background-image: url(images/gray_bg.png);
+background-repeat: repeat-x;
+background-position: top; 
+padding:5px;}
+.comarea{width:400px; background-image: url(images/gray_bg.png);
+background-repeat: repeat-x;
+background-position: top; 
+padding:5px;}
+.tcenter input,textarea {font:normal 12px Verdana,sans-serif; color:#333; border:1px solid #ccc;}
+input.formbutton{
+font-weight: normal; 
+width:120px;color:#000000;
+font:11px Verdana, Geneva, sans-serif;background-color:#D4D4F6;
+font-weight:500; 
+border: 1px solid #666;
+height:20px;}
+.comareaact {width:400px;  background-image: none; padding:5px;}
+.inputtextact {width:200px; background-image: none; padding:5px;}
+#priroda {font-weight: normal;}
+
+.sredniy_block {text-align: center; margin-top: 10px; margin-bottom: 10px;}
+
+.flashxml {text-align:center; margin-top: 20px; margin-bottom: 20px;}
+
+.loginza { text-decoration: none; font-size: 11px; font-weight: bold; color: #01468A;}
+.loginza a { text-decoration: none; font-size: 11px;}
+
+.goo {background: #F1F5F9 ;margin: 20px 20px 0 20px; padding: 5px; border: 1px dotted #D5D5D5;}

@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Задания 1 курс</title>
+    <link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+    <style>
+            /* описание таблицы  */
+            body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 4pt 0pt 0pt 20pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+        
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .zagol{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Стандартная шапка страницы -->
+    <div class='Shapka'>
+        <p class='Zag'>Задания для 1 курса. Практическое занятие №24</p>
+
+    </div>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1>Работа с текстом. Создание гиперссылок.</h1>
+
+                <h2>Ход работы:</h2>
+                <ul>
+                    <li>1. Ознакомьтесь с <a href="res/teor.png" target="new"><span class="Term">теоретическими сведениями</span></a>.</li>
+                    <li>2. Создайте собственную визитную карточку для Internet, состоящую как минимум из трех страниц, связанных гипертекстовыми ссылками. Просмотрите ее.</li>
+                    <li>4. Создайте html страницу, содержащую ссылки на популярные ресурсы. <span class="Term">Все ссылки должны быть сгруппированы в три раздела</span>:<br>
+                        <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•web-сервисы (ссылки на почтовые, поисковые сервера, чат и т.п.);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•внутренние ресурсы (ссылки на учебники, статьи, скаченные из сети интернет);<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•любимые сайты (ссылки на ваши любимые ресурсы сети).<br></i>
+                        <img src="res/1.png" alt="">
+                    </li>
+
+                    <li>5. Оформите внешний вид страницы, разработайте цветовую схему. Сохраните ваш документ под именем <span class="Term">Internet.html (этот документ нам потребуется в дальнейшем), сделайте эту станицу стартовой</span> (рисунок выше).</li>
+                    &nbsp;
+                   <li>Для тех, кто забыл учебник:<br>
+                    <a href="res/Screenshot_1.png" target="new"><img src="res/Screenshot_1.png" width="100"></a>
+                    <a href="res/Screenshot_2.png" target="new"><img src="res/Screenshot_2.png" width="100"></a>
+                    <a href="res/Screenshot_3.png" target="new"><img src="res/Screenshot_3.png" width="100"></a>
+                    <a href="res/Screenshot_4.png" target="new"><img src="res/Screenshot_4.png" width="100"></a>
+                    <a href="res/Screenshot_5.png" target="new"><img src="res/Screenshot_5.png" width="100"></a>
+                </li>
+                    &nbsp;
+                    <li><a href="res/dop.png" target="new"><span class="Term">Дополнительное задание</span></a> и <a href="res/kr.png" target="new"><span class="Term">Контрольные вопросы</span></a></li>
+                    
+
+
+                </ul>
+                <p>&nbsp;</p>
+
+            </td>
+        </tr>
+    </table>

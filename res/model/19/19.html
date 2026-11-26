@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Задания 1 курс</title>
+    <link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+    <style>
+        /* описание таблицы  */
+        body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 4pt 0pt 0pt 20pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+        
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .zagol{
+            color: blue;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Стандартная шапка страницы -->
+    <div class='Shapka'>
+        <p class='Zag'>Задания для 1 курса. Практическое занятие №19</p>
+
+    </div>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1>Работа с графикой в PascalABC</h1><br>
+            <ul>
+                &nbsp;&nbsp;&nbsp;Как на языке программирования Паскаль АВС создать простейшую анимацию - иллюзию движения?<br>
+                Анимация в программировании заключается в том, что сначала рисуется фигура цветным инструментом, затем с тем же координатами рисуется та же фигура белым цветом. После чего происходит сдвиг фигуры и действия повторяются.<br>
+                &nbsp;<br>
+                <b>Пример</b>: Воспроизвести движение круга по горизонтали.<br>
+                <img src="img/1.png" alt=""><br>
+                Теперь рассмотрим  пример: создать движение нескольких (примитивных) фигур по заданной траектории. Без чего мы обойтись не сможем, не сможем мы обойтись без нескольких инструментов:<br>
+                &nbsp;<br>
+                <b>Процедура LockDrawing;</b><br>
+                &nbsp;&nbsp;&nbsp;Рисование средствами PascalABC происходит очень медленно. Пока оно идет, картинка на экране успевает много раз обновиться. Отсюда мерцание. То есть, мы видим не окончательную картинку, а процесс ее рисования. Окончательную картинку в общем-то не видим — как только она построилась, мы ее тут же стираем и начинаем новый цикл рисования. Для борьбы с этим эффектом придумали двойную буферизацию. Идея в том, чтобы сначала построить картинку в памяти (не выводя на экран), а затем отобразить новый кадр на экране целиком, без промежуточных вариантов, где не хватает половины лучиков. Для этого в начале программы вызываем процедуру LockDrawing.<br>
+                &nbsp;<br>
+                <b>Процедура ClearWindow (color)</b>;<br>
+                &nbsp;&nbsp;&nbsp;После каждой прохода по циклу очищает графическое окно указанным цветом, который передается в качестве параметра.<br>
+                &nbsp;<br>
+                После этого все команды рисования будут создавать картинку в памяти (в так называемом вторичном буфере). Непосредственно на экране ничего рисоваться не будет. После того, как очередной кадр анимации полностью отрисован (то есть перед ClearWindow), нужно вызвать процедуру <b>Redraw</b>;<br>
+                &nbsp;<br>
+                Эта процедура вызовет перерисовку всей картины.<br>  
+                &nbsp;<br>
+                Нарисуем сначала четыре окружности.<br>  
+                <img src="img/2.png" alt=""><br>
+                Второй стадией, будет отрисовка пятой окружности и с помощью вышеуказанных процедур и цикла заставим его двигаться по заданной траектории.<br>
+                <img src="img/3.png" alt=""><br>
+                &nbsp;<br>
+              <span class="Term">Выполните задания:</span><br>
+              <img src="img/4.png" alt="">
+
+            </ul>
+                        
+            </td>
+        </tr>
+    </table>
+    

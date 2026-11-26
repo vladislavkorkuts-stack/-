@@ -1,0 +1,323 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Задания 1 курс</title>
+    <link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+    <style>
+        /* описание таблицы  */
+        body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 6pt 0pt 0pt 24pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .zz{
+            align-items: center;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .Termm{
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex; 
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <!-- Стандартная шапка страницы -->
+    <div class='Shapka'>
+        <p class='Zag'>Задания для 1 курса. Практическое занятие №11</p>
+
+    </div>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1>КОДИРОВАНИЕ ИНФОРМАЦИИ</h1>
+                <ul>
+                    <li><span class="Term">Прочитайте <a href="Teor.docx">теоритические сведенья</a>.</span></li>
+                    <h2>Решите задачи:</h2>  
+                <li>
+                    <span class="Term">Системы счисления</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Задачи</b><br>
+                    1. Числа в двоичной системе счисления имеют вид 11(2) и 101(2) . Чему равно их произведение в десятичном виде? Варианты: 60, 15, 1111, 8.<br>
+                    2. Чему равна разность 25 - &1101. Варианты: &1100, 13.<br>
+                    3. В десятичной - 8;<br>
+                    &nbsp;&nbsp;&nbsp;•в двоичной - [ ];<br>
+                    &nbsp;&nbsp;&nbsp;•в восьмеричной - [ ];<br>
+                    &nbsp;&nbsp;&nbsp;•в шестнадцатеричной - [ ].<br>
+                    4. Количество чисел, которое можно закодировать нулями и единицами в 10 позициях, равно: 128, 256, 1024, 2048?<br>
+                    5. Укажите истинное высказывание:<br>
+                    &nbsp;&nbsp;&nbsp;•#a < &1100;<br>
+                    &nbsp;&nbsp;&nbsp;•#a > &1100;<br>
+                    &nbsp;&nbsp;&nbsp;•#a = &1100.<br>
+                    6. Дано равенство 23(k)+33(k)=122(k). Чему равно k? Варианты: 2, 3, 4, 10.<br>
+                    7. Какое число предшествует шестнадцатеричному числу #6afa? Варианты: #6afb, #6a10, #6af9, #5afa.<br>
+                    8. Шестнадцатеричное число #4d в десятичной системе счисления это: 43, 77, 177, 176?<br>
+                    9. Прочитайте стихотворение. Переведите встречающиеся в нем числительные из двоичной системы счисления в десятичную. <img src="img/1.png" alt=""><br>
+                    10. За праздничным столом собрались 4 поколения одной семьи: дед, отец, сын и внук. Их возраст в различных системах счисления записывается так 88 лет, 66 лет, 44 года и 11 лет. Сколько им лет в десятичной системе счисления, если через год их возраст в тех системах счисления можно будет записать как 100?<br>
+                </li>
+                <p>&nbsp;</p>
+                <li>
+                    <span class="Term">Кодирование символов.<br>
+                        Байт.</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Задачи</b><br>
+                        &nbsp;&nbsp;1. В кодируемом английском тексте используется только 26 букв латинского алфавита и еще 6 знаков пунктуации. В этом случае текст, содержащий 1000 символов можно гарантированно сжать без потерь информации до размера:<br>
+                        &nbsp;&nbsp;&nbsp;•8000 бит;<br>
+                        &nbsp;&nbsp;&nbsp;•7000 бит;<br>
+                        &nbsp;&nbsp;&nbsp;•5000 бит;<br>
+                        &nbsp;&nbsp;&nbsp;•1000 бит.<br>
+                        &nbsp;&nbsp;2. Словарь Эллочки – «людоедки» (персонаж романа «Двенадцать стульев») составляет 30 слов. 
+                        Сколько бит достаточно, чтобы закодировать весь словарный запас Эллочки?<br> 
+                        Варианты: 8, 5, 3, 1.
+                </li>
+                <p>&nbsp;</p>
+                <li>
+                    <span class="Term">Принципы уменьшения объема графических файлов</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Задачи</b><br>
+                    1. Определите, каким цветам из набора:красный, зеленый, синий, белый, черный, соответствуют следующие десятичные коды в системе RGB:<br>
+                    &nbsp;&nbsp;&nbsp;•	0,255,0;<br>
+                    &nbsp;&nbsp;&nbsp;•	255,255,255;<br>
+                    &nbsp;&nbsp;&nbsp;•	0,0,0;<br>
+                    &nbsp;&nbsp;&nbsp;•	0,0,255;<br>
+                    &nbsp;&nbsp;&nbsp;•	255,0,0.<br>
+                    2. Какой цвет в системе RGB представляется следующим шестнадцатеричным кодом: #ffff00?<br>
+                    &nbsp;&nbsp;&nbsp;•	Cyan;<br>
+                    &nbsp;&nbsp;&nbsp;•	Magenta;<br>
+                    &nbsp;&nbsp;&nbsp;•	Yellow;<br>
+                    &nbsp;&nbsp;&nbsp;•	Black.<br>
+                    3. В режиме True Color на хранение кода каждого пикселя отводится:<br>
+                    &nbsp;&nbsp;&nbsp;•	16 бит;<br>
+                    &nbsp;&nbsp;&nbsp;•	16 байт;<br>
+                    &nbsp;&nbsp;&nbsp;•	24 бита.<br>
+                    4. Минимальной единицей измерения графического изображения на экране монитора является:<br>
+                    &nbsp;&nbsp;&nbsp;•	mm;<br>
+                    &nbsp;&nbsp;&nbsp;•	sm;<br>
+                    &nbsp;&nbsp;&nbsp;•	pixel;<br>
+                    &nbsp;&nbsp;&nbsp;•	inch.<br>
+                    5. Растровый графический файл содержит черно-белое изображение (без градаций серого) размером 100х100 точек. Какой объем памяти требуется для хранения этого файла?<br>
+                    &nbsp;&nbsp;&nbsp;•	1000 бит;<br>
+                    &nbsp;&nbsp;&nbsp;•	10000 бит;<br>
+                    &nbsp;&nbsp;&nbsp;•	10000 байт.<br>
+                    6. Растровый файл, содержащий черно-белый (без оттенков серого) квадратный рисунок, имеет объем 200 байт. Рассчитайте размер стороны квадрата (в пикселях).<br>
+                    &nbsp;&nbsp;&nbsp;•	15;<br>
+                    &nbsp;&nbsp;&nbsp;•	40;<br>
+                    &nbsp;&nbsp;&nbsp;•	1000.<br>
+                    7. Объем изображения, размером 40х50 пикселей, составляет 2000 байт. Изображение использует:<br>
+                    &nbsp;&nbsp;&nbsp;•	8 цветов;<br>
+                    &nbsp;&nbsp;&nbsp;•	256 цветов;<br>
+                    &nbsp;&nbsp;&nbsp;•	16777216 цветов.<br>
+                    8. Известно, что видеопамять компьютера имеет объем 512 Кбайт. Разрешающая способность экрана 640 на 200 пикселей. Сколько страниц экрана одновременно разместится в видеопамяти при палитре:<br>
+                    &nbsp;&nbsp;&nbsp;•	из 8 цветов;<br>
+                    &nbsp;&nbsp;&nbsp;•	16 цветов;<br>
+                    &nbsp;&nbsp;&nbsp;•	256 цветов?<br>
+                </li>
+                <p>&nbsp;</p>
+                <li><span class="Term">Цифро-аналоговое и аналого-цифровое<br>
+                    преобразование звуковой информации</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Задачи</b><br>
+                    1. Подсчитать, сколько места будет занимать одна минута цифрового звука на жестком диске или любом другом цифровом носителе, записанного с частотой<br>
+а) 44.1 кГц;<br>
+б) 11 кГц;<br>
+в) 22 кГц;<br>
+г) 32 кГц<br>
+и разрядностью 16 бит.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Решение.</b><br>
+а) Если записывают моносигнал с частотой 44.1 кГц, разрядностью 16 бит (2 байта), то каждую минуту аналого-цифровой преобразователь будет выдавать 441000 * 2 * 60 = 529 000 байт (около 5 Мб) данных об амплитуде аналогового сигнала, который в компьютере записываются на жесткий диск.<br>
+Если записывают стереосигнал, то 1 058 000 байт (около 10 Мб)<br>.
+б) для частот 11, 22, 32 кГц расчеты производятся аналогично.<br>
+2. Какой объем данных имеет моноаудиофайл, длительность звучания которого 1 секунда, при среднем качестве звука (16 бит, 24 кГц)?
+Решение.<br>
+16 бит * 24000 = 384 000 бит = 48 000 байт = 46 875 килобайт.<br>
+3. Рассчитайте объем стереоаудиофайла длительностью 20 секунд при 20-битном кодировании и частоте дискредитации 44.1 кГц. Варианты: 44,1 Mb, 4.21 Mb, 3,53 Mb.<br>
+4. Определите количество уровней звукового сигнала при использовании 8-битных звуковых карт. Варианты: 256, 512,1024, 65 536.<br>
+5. Приведите пример:<br>
+&nbsp;&nbsp;а) аналогового способа представления звуковой информации;<br>
+&nbsp;&nbsp;б) дискретного способа представления звуковой информации.<br>
+6. Перечислите параметры, от которых зависит качество двоичного кодирования звука.<br>
+
+                
+                </li>
+
+
+
+
+                </ul>
+
+            </td>
+        </tr>
+    </table>

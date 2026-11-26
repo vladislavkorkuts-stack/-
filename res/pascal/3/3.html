@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Задания 1 курс</title>
+    <link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+    <style>
+        /* описание таблицы  */
+        body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 6pt 0pt 0pt 24pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Стандартная шапка страницы -->
+    <div class='Shapka'>
+        <p class='Zag'>Задания для 1 курса. Практическое занятие №3</p>
+
+    </div>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1>Работа с одномерными числовыми массивами: <br>
+                описание массивов, способы ввода и вывода элементов массива</h1>
+                <ul><b>Массив</b> - это поименованная совокупность однотипных элементов, упорядоченных по индексам, определяющим положение элемента в массиве.<br>
+                    &nbsp;Решение разнообразных задач, связанных с обработкой массивов, базируется на решении таких типовых задач, как:<br>
+                    &nbsp;&nbsp;- суммирование элементов массива;<br>
+                    &nbsp;&nbsp;&nbsp;- поиск элемента с заданными свойствами;<br>
+                    &nbsp;&nbsp;&nbsp;- сортировка массива.
+                    
+                <li>
+                   <span class="Term"> Описание массива</span><br>
+                   &nbsp;&nbsp;&nbsp;function <имя_функции> (<описание входных данных>): <тип_функции>;<br>
+                    &nbsp;&nbsp;&nbsp;begin<br>
+                    &nbsp;&nbsp;&nbsp;<операторы>;<br>
+                    &nbsp;&nbsp;&nbsp;<имя_функции> := <результат><br>
+                    &nbsp;&nbsp;&nbsp;end;<br>
+                    &nbsp;&nbsp;&nbsp;var a: array [1..10] of integer;<br>
+                    &nbsp;&nbsp;&nbsp; const b: array [1..5] of integer = (4, 2, 3, 5, 7);<br>
+                    Массив b с постоянными значениями описан в разделе описания констант.
+                </li>
+                <p>&nbsp;<p>
+                <li>
+                    <span class="Term"> Способы заполнения массива</span><br>
+
+                    &nbsp;&nbsp;&nbsp;Заполнение массива можно производить несколькими способами:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) с клавиатуры<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) оператора присваивания,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) используя циклы.<br>
+
+                    <span class="Term">1 способ.</span><br> Ввод каждого значения с клавиатуры:<br>
+                    &nbsp;&nbsp;&nbsp;for i:=1 to 10 do read (a[i]);<br>
+                    <span class="Term">2 способ.</span><br> С помощью оператора присваивания (по формуле):<br>
+&nbsp;&nbsp;&nbsp;for i:=1 to 10 do a[i]:=i;<br>
+<span class="Term">3 способ.</span><br> С помощью оператора присваивания (случайными числами):<br>
+&nbsp;&nbsp;&nbsp;randomize;<br>
+&nbsp;&nbsp;&nbsp;for i:=1 to 10 do a[i]:=random(100);
+
+                </li>
+                <p>&nbsp;<p></p>
+                <li>
+                    <span class="Term">Вывод массива</span><br>
+<b>1 способ.</b> Элементы массива можно вывести в строку, разделив их пробелом:<br>
+&nbsp;&nbsp;&nbsp;for i:=1 to 10 do write (a[i], ' ');<br>
+<b>2 способ.</b> Вывод с комментариями:<br>
+&nbsp;&nbsp;&nbsp;for i:=1 to 10 do writeln ('a[', i, ']=', a[i]);<br>
+&nbsp;&nbsp;&nbsp;Заполнения массива A(10) случайными числами и вывод элементов массива<br>
+&nbsp;&nbsp;&nbsp;program  n_1 ;<br>
+&nbsp;&nbsp;&nbsp;var i: integer;<br>
+&nbsp;&nbsp;&nbsp;a: array[1...10] of integer;<br>
+&nbsp;&nbsp;&nbsp;begin <br>
+&nbsp;&nbsp;&nbsp;for i:=1 to 10 do a[i]:=random(50);<br>
+&nbsp;&nbsp;&nbsp;for i:=1 to 10 do write (a[i],` `);<br>  
+&nbsp;&nbsp;&nbsp;end.
+
+                </li>
+                <p>&nbsp;<p>
+                <span class="Term">Выполните практическую работу</span><br>
+                <img src="img/prakt.png" alt="">
+
+                </ul>
+
+            </td>
+        </tr>
+    </table>

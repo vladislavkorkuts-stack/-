@@ -1,0 +1,307 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <title>Задания 1 курс</title>
+    <link href="../res/tabl_tema.css" rel='stylesheet' type='text/css'>
+    <style>
+        /* описание таблицы  */
+        body {
+            background-color: #26AEE7;
+        }
+
+        table {
+            border-color: #a19c8d88;
+        }
+
+        th {
+            border-color: #6e2216;
+        }
+
+        td {
+            border-color: #6e2216;
+        }
+
+        /* Общие стили курса*/
+        body {
+            background-color: #494d4e;
+            font-size: 14pt;
+            font-family: "Verdana", "Times New Roman";
+            text-align: justify;
+        }
+
+        p {
+            margin-bottom: 1pt;
+            margin-top: 1pt;
+        }
+
+        table {
+            background:linear-gradient(to top, #c0c0c0, #ffffff);
+            width: 90%;
+            margin-bottom: 5pt;
+            margin-top: 18pt;
+            box-shadow: 0 0 10px rgba(255, 4, 4, 0.5); /* Параметры тени */
+            padding: 100px;
+
+            /* border-style: normal; */
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #fff #380d05 #380d05 #fff;
+            border-width: 0px 0px 0px 0px;
+
+            font-size: 14pt;
+        }
+
+        td {
+            padding: 12pt 12pt 0pt;
+        }
+
+        table table,
+        table div {
+            background-color: #EEC;
+            width: 80%;
+            margin: 22pt 10pt;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: #644;
+            border-width: 5px;
+        }
+
+        img {
+            margin: 6pt 0pt 0pt 24pt;
+        }
+
+        pre {
+            font-family: "Tahoma", "Arial Narrow", "Arial Unicode MS", "Arial";
+            margin-left: 72pt;
+        }
+
+        /* Особености оформления общей шапки и подвала страниц */
+        DIV.Shapka {
+            background-color: #EEE;
+            margin: 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        DIV.Podval {
+            background-color: #EEE;
+            margin: 22pt 0pt 0pt;
+            padding: 2pt 7pt 5pt;
+            border-style: none;
+        }
+
+        table.Shapka {
+            background-color: #EEE;
+            width: 100%;
+            margin: 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        table.Podval {
+            background-color: #EEE;
+            width: 100%;
+            margin: 22pt 0pt 0pt;
+            padding: 0pt;
+            border-collapse: collapse;
+            border-style: none;
+        }
+
+        p.Zag {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 0pt;
+        }
+
+        /* --Конец описания: Особености оформления общей шапки и подвала страниц -- */
+
+        /* Заголовки */
+        table h1 {
+            font-size: 26pt;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+        }
+
+        table h2 {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #00C;
+        }
+
+        /* таблица без границ внутри текста */
+        table table {
+            border-style: none;
+            margin: 0pt;
+        }
+
+        /* Выделяем термены вроде Файл-Новый... */
+        .Term {
+            font-weight: bold;
+            font-family: "Arial";
+            font-size: 130%;
+            letter-spacing: -0.03ex;
+        }
+        
+
+        /* абзацы с отступом */
+        p.Dop1 {
+            margin-left: 24pt;
+        }
+
+        /* абзацы с двойным отступом */
+        p.Dop2 {
+            margin-left: 48pt;
+        }
+
+        /* Программирование: */
+        /* Служебные слова */
+        .SlSlovo {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F00;
+        }
+
+        /* Комментарии */
+        .Comm {
+            color: #484;
+            font-style: italic;
+        }
+        a{
+            color: rgb(66, 14, 49) ;
+        }
+        .lefting{
+            float:left;
+            margin: 7px 7px 7px 7px
+        }
+        .righting{
+            float:right;
+            margin: 7px 0 7px 7px
+        }
+        .zagol{
+            color: blue;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <!-- Стандартная шапка страницы -->
+    <div class='Shapka'>
+        <p class='Zag'>Задания для 1 курса. Практическое занятие №17</p>
+
+    </div>
+
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1>Основные графические примитивы для PascalABC </h1><br>
+                <ul>
+                    <b>Uses Graphabc; подключаем модуль графики. </b>
+                    <p>&nbsp;</p>
+                    <li>
+                        <p class="zagol"><b>Графическое окно</b></p><br>
+                        &nbsp;&nbsp;&nbsp;<b>SetWindowTitle('Заголовок');</b> Устанавливает заголовок графического окна.<br>
+                        &nbsp;&nbsp;&nbsp;<b>SetWindowSize(w,h);</b> Устанавливает размеры клиентской части графического окна в пикселах<br>
+                        &nbsp;&nbsp;&nbsp;<b>SetCoordinateOrigin(x0,y0);</b> Устанавливает начало координат в точку (x0,y0)<br>
+                        &nbsp;&nbsp;&nbsp;<b>SetCoordinateScale(sx,sy);</b> Устанавливает масштаб системы координат<br>
+                        &nbsp;&nbsp;&nbsp;<b>SetCoordinateAngle(a);</b> Устанавливает поворот системы координат.<br>
+                    </li>
+                    &nbsp;
+                    <li>
+                        <p class="zagol"><b>Примитивы для рисования</b></p><br>
+                        <b>PutPixel(x,y,C);</b>	Закрашивает пиксел с координатами (x,y) цветом c<br>
+                        <b>LineTo(x,y);</b>	Рисует отрезок от текущей позиции до точки (x,y). Текущая позиция переносится в точку (x,y)<br>
+                        <b>Line(x1,y1,x2,y2);</b>	Рисует отрезок от точки (x1,y1) до точки (x2,y2)<br>
+                        <b>Line(x1,y1,x2,y2,c);</b> Рисует отрезок от точки (x1,y1) до точки (x2,y2) цветом<br>
+                        <b>Line(x1,y1,x2,y2,c);</b> Рисует отрезок от точки (x1,y1) до точки (x2,y2) цветом<br>
+                        <b>DrawCircle(x,y,r);</b> Рисует окружность с центром (x,y) и радиусом r <br>
+                        <b>DrawEllipse(x1,y1,x2,y2);</b>	Рисует границу эллипса, ограниченного прямоугольником, заданным координатами противоположных вершин (x1,y1) и (x2,y2)<br>
+                        <b> DrawRectangle(x1,y1,x2,y2);</b> Рисует границу прямоугольника, заданного координатами противоположных вершин (x1,y1) и (x2,y2) <br>                             
+                        <b>Arc(x,y,r,a1,a2)</b> Рисует дугу окружности с центром в точке (x,y) и радиусом r, заключенной между двумя лучами, образующими углы a1 и a2 с осью OX (a1 и a2 – вещественные, задаются в градусах и отсчитываются против часовой стрелки)<br>
+                        <b>DrawPie(x,y,r,a1,a2);</b>	Рисует сектор окружности, ограниченный дугой с центром в точке (x,y) и радиусом r, заключенной между двумя лучами, образующими углы a1 и a2 с осью OX (a1 и a2 – вещественные, задаются в градусах и отсчитываются против часовой стрелки<br>
+                        <b>TextOut(x,y,'Текст');</b> Выводит строку s в прямоугольник к координатами левого верхнего угла (x,y)<br>
+                        <b>FloodFill(x,y,с);</b>Заливает область одного цвета цветом c, начиная с точки (x,y).<br>
+                         &nbsp;
+                        <p><b>Стандартные цвета задаются символическими константами:</b></p>
+                        <img src="img/3.png" alt=""><br>
+                        В место константы можно использовать функцию <b>RGB(r,g,b:)</b>;<br>
+                        Возвращает целое значение, являющееся кодом цвета, который содержит красную, зеленую и синюю составляющие с интенсивностями r, g и b соответственно (r, g и b – целые в диапазоне от 0 до 255, причем, 0 соответствует минимальной интенсивности, 255 – максимальной).<br>
+                        &nbsp;   
+                        <p class="zagol"><b>Действия с пером (рисование) и кистью (закраска).</b></p><br>
+                        <b>SetPenColor(color)</b>;Устанавливает цвет пера, задаваемый параметром <b>color</b>. 
+                        <b>SetPenWidth(w)</b>;Устанавливает ширину пера, равную <b>w</b> пикселам.
+                        <b>SetPenStyle(ps)</b>;Устанавливает стиль пера, задаваемый параметром <b>ps</b>.<br>
+                        <b>Стили пера</b> задаются следующими именованными константами:<br>
+                        <img src="img/4.png" alt="" class="lefting">
+                        <b>SetBrushColor(color)</b>;Устанавливает цвет кисти, задаваемый параметром <b>color</b>.<br>
+                        <b>SetBrushStyle(bs)</b>;Устанавливает стиль кисти, задаваемый параметром <b>bs</b>.<br>
+                        <img src="img/5.png" alt="" class="righting">
+                        <p>&nbsp;</p><br>
+                        <p>&nbsp;</p><br>
+                        <p class="zagol"><b>Настройка вывода текста</b></p><br>
+                        <b>SetFontColor(color)</b>; Устанавливает цвет шрифта.<br>
+                        <b>SetFontSize(sz)</b>; Устанавливает размер шрифта в пунктах.<br>
+                         <b>SetFontName(шрифт)</b>;По умолчанию установлен шрифт, имеющий наименование <b>MS Sans Serif</b>.<br>
+                        Наиболее распространенные шрифты – это <b>Times, Arial и Courier New</b>.<br>
+                         Наименование шрифта можно набирать без учета регистра.<br>
+                         <b>SetFontStyle(fs)</b>;Устанавливает стиль шрифта.<br>
+                        <b>Стили шрифта</b> задаются следующими именованными константами:<br>
+                        <img src="img/6.png" alt=""><br>
+                        Пример программы построение графика функции.<br>
+                        <img src="img/7.png" alt="" class="lefting">
+                        <img src="img/8.png" alt=""><br>
+                        <p>&nbsp;</p>
+                        <span class="Term">Использование ABCButtons</span><br>
+                        <hr></hr>
+                        Все программы, использующие модуль должны иметь следующий вид:<br>
+                        <img src="img/9.png" alt="">
+                        <hr></hr>
+                        Класс ButtonABC<br>
+                        <b>ABCButton</b>- класс кнопки.<br>
+                        <li>Декларировать в секции var кнопку можно так:
+                            <img src="img/10.png" alt=""><br>
+                            name - имя кнопки;</li>
+                            &nbsp;
+                        <li>Инициализировать с помощью new кнопку можно следующим образом:<br>
+                        <img src="img/11.png" alt=""><br>
+                        <b>x, y</b> - координаты левого верхнего угла кнопки;<br>
+                        <b>w, h</b> - ширина и высота кнопки соответственно;<br>
+                        <b>t</b> - текст на кнопке;<br>
+                        <b>c</b> - цвет кнопки.<br>
+                        </li>
+                        <img src="img/12.png" alt=""><br>
+                        &nbsp;<br>
+                        Курсор
+                        <hr></hr>
+                        Параметры <b>x и y</b> в обработчиках <b>OnMouseDown, OnMouseUp и OnMouseMove</b> определяют координаты курсора мыши в момент наступления события.<br>
+                        &nbsp;<br>
+                        Привязка обработчиков событий<br>
+                        <hr></hr>
+                        Чтобы выполнялась некоторая процедура при нажатии на кнопку пишите:<br>
+                        <img src="img/13.png" alt=""><br>
+                        <b>a</b> - имя кнопки, <b>p</b> - процедура, которая выполниться по нажатию на кнопку <b>a</b>.<br>
+                        &nbsp;<br>
+                        Окно GraphABC<br>
+                        <hr></hr>
+                        GraphABCWindow - класс главного единственного графического окна.<br>
+                        <img src="img/14.png" alt="">
+                    </li>  
+                    <br>
+                    <p>&nbsp;</p><br>
+                    <li><span class="Term">Пример программы:</span><br>
+                        <img src="img/1.png" alt="primer1" width="46%">
+                        <img src="img/2.png" alt="" width="46%" class="righting">
+                    
+                    </li>
+                </ul>
+                        
+            </td>
+        </tr>
+    </table>

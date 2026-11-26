@@ -1,0 +1,288 @@
+/* ================= ТЕМА: 10 класс — голубая, как на индексе ================= */
+:root {
+  --bg: #f4f8fc;
+  --surface: #ffffff;
+  --ink: #12263a;
+  --muted: #4a5b6e;
+  --sky-1: #dcebfa;
+  --sky-2: #7cc4ee;
+  --brand: #1c75bc;
+  --brand-dark: #155a91;
+  --accent: #f0d9a8;
+  --line: #e2ecf5;
+  --radius: 20px;
+  --shadow: 0 10px 30px rgba(28, 117, 188, .10);
+  --shadow-hover: 0 18px 44px rgba(28, 117, 188, .20);
+  --container: 1280px;
+  --pad-x: 32px;
+}
+
+* { box-sizing: border-box; }
+
+html, body.u-body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* прижимаем футер к низу */
+body.u-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.site-header,
+.site-footer { flex-shrink: 0; }
+.main-wrap { flex: 1 0 auto; width: 100%; }
+
+h1, h2, h3, .header-title, .card-title, .instr-title {
+  font-family: 'Unbounded', 'Manrope', sans-serif;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+/* ================= ШАПКА ================= */
+.site-header {
+  background: linear-gradient(150deg, #dcebfa 0%, #7cc4ee 50%, #1c75bc 100%);
+  padding: 26px 0;
+  position: relative;
+  overflow: hidden;
+}
+.site-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 20%, rgba(255,255,255,.35), transparent 45%);
+  pointer-events: none;
+}
+.header-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.header-logo {
+  width: auto;
+  height: 80px;
+  max-width: 80px;
+  object-fit: contain;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+.header-titles { min-width: 0; }
+.header-school {
+  margin: 0 0 4px;
+  color: rgba(18, 38, 58, .75);
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: .02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.header-title {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+.header-back {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .9rem;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(255,255,255,.8);
+  transition: .2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.header-back:hover { background: #ffffff; }
+
+/* ================= ОСНОВНОЙ БЛОК ================= */
+.main-wrap {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 56px var(--pad-x) 72px;
+}
+
+/* ================= КАРТОЧКИ РАЗДЕЛОВ ================= */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 22px;
+  margin-bottom: 48px;
+}
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 22px 22px 20px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: transparent;
+}
+.card-icon {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
+  padding: 8px;
+  background: #f1f7fd;
+  border-radius: 14px;
+}
+.card-body { min-width: 0; flex: 1; }
+.card-title {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.card-desc {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.45;
+}
+.card-arrow {
+  font-weight: 700;
+  font-size: .88rem;
+  color: var(--brand);
+  transition: .2s ease;
+}
+.card:hover .card-arrow { color: var(--brand-dark); }
+
+/* ================= ИНСТРУКЦИЯ ================= */
+.instr-section {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+}
+.instr-title {
+  margin: 0 0 18px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.instr-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #f1f7fd;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .95rem;
+  transition: .2s ease;
+}
+.instr-link::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand);
+  flex-shrink: 0;
+}
+.instr-link:hover {
+  background: var(--sky-1);
+  border-color: transparent;
+}
+.instr-link:hover::before { background: var(--brand-dark); }
+
+/* ================= ПОДВАЛ ================= */
+.site-footer {
+  background: linear-gradient(150deg, #dcebfa 0%, #7cc4ee 50%, #1c75bc 100%);
+  color: var(--ink);
+  padding: 36px 0;
+}
+.footer-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+  text-align: center;
+}
+.footer-teacher {
+  margin: 0 0 18px;
+  font-size: .95rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.social-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.8);
+  transition: .2s ease;
+}
+.social-row a:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+.social-row img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  opacity: .85;
+}
+
+/* ================= АДАПТИВ ================= */
+@media (max-width: 1024px) {
+  :root { --pad-x: 24px; }
+}
+@media (max-width: 820px) {
+  .main-wrap { padding: 40px var(--pad-x) 56px; }
+  .header-logo { height: 52px; max-width: 52px; }
+  .header-title { font-size: 1.2rem; }
+  .cards-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { padding: 16px; gap: 12px; }
+  .card-icon { width: 44px; height: 44px; }
+}
+@media (max-width: 520px) {
+  :root { --pad-x: 16px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  .instr-section { padding: 22px 18px; }
+  .header-back { padding: 8px 14px; font-size: .82rem; }
+}
